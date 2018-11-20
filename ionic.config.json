@@ -1,0 +1,7 @@
+{
+  "name": "programmation_mobile_Ihadjadene_Soltana",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
