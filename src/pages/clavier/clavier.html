@@ -8,19 +8,36 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>{{ numero }}</ion-list-header>
-    <ion-item>
-      <button (click)="Keyboard('1')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">1</button>
-      <button (click)="Keyboard('2')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">2</button>
-      <button (click)="Keyboard('3')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">3</button><br>
-      <button (click)="Keyboard('4')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">4</button>
-      <button (click)="Keyboard('5')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">5</button>
-      <button (click)="Keyboard('6')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">6</button><br>
-      <button (click)="Keyboard('7')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">7</button>
-      <button (click)="Keyboard('8')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">8</button>
-      <button (click)="Keyboard('9')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">9</button><br>
-      <button (click)="Keyboard('0')"><img src="../../assets/imgs/logo.png" width="50px" height="50px">0</button>
+    <p class="numero">{{ numero }}</p>
+    <div class="keyboard">
+      <button class="btn" (click)="Keyboard('1')">1</button>
+      <button class="btn" (click)="Keyboard('2')">2</button>
+      <button class="btn" (click)="Keyboard('3')">3</button><br>
+      <button class="btn" (click)="Keyboard('4')">4</button>
+      <button class="btn" (click)="Keyboard('5')">5</button>
+      <button class="btn" (click)="Keyboard('6')">6</button><br>
+      <button class="btn" (click)="Keyboard('7')">7</button>
+      <button class="btn" (click)="Keyboard('8')">8</button>
+      <button class="btn" (click)="Keyboard('9')">9</button><br>
+      <button class="btn" (click)="Keyboard('*')">*</button>
+      <button class="btn" (click)="Keyboard('0')">0</button>
+      <button class="btn" (click)="Keyboard('#')">#</button>
+    </div>
+    <ion-item style="text-align: center;">
+      
 
+      <!-- <button  (click)="Keyboard('2')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-2-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('3')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-3-100.png" width="50px" height="50px"></button><br><br>
+      <button  (click)="Keyboard('4')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-4-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('5')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-5-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('6')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-6-100.png" width="50px" height="50px"></button><br><br>
+      <button  (click)="Keyboard('7')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-7-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('8')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-8-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('9')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-9-100.png" width="50px" height="50px"></button><br><br>
+      <button  (click)="Keyboard('0')"><img class="img-shadow" src="../../assets/imgs/icons8-medical-id-90.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('0')"><img class="img-shadow" src="../../assets/imgs/icons8-cerclé-0-100.png" width="50px" height="50px"></button>
+      <button  (click)="Keyboard('0')"><img class="img-shadow" src="../../assets/imgs/icons8-hashtag-96.png" width="50px" height="50px"></button>
+  -->
 
 
     </ion-item>
