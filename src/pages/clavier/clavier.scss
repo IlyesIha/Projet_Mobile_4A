@@ -13,7 +13,7 @@
     font-size: 30px;
 }
 
-.btn:hover {
+.btn:hover, .btn-medical:hover {
     background-color: #b4b4b4 ;
 }
 
@@ -40,7 +40,6 @@
     background-color: #53DD6C;
         margin-right: 10px;
         margin-bottom: 10px;
-        font-family: 'Open Sans Condensed', sans-serif;
         width: 50px; //longeur
         height: 50px; //hauteur
         border-radius: 50%; //cercle
@@ -55,3 +54,36 @@
 .btn-call:hover {
     opacity: 0.7;
 }
+
+.btn-ghost {
+    margin-right: 10px;
+        margin-bottom: 10px;
+        width: 50px; //longeur
+        height: 50px; //hauteur
+        border-radius: 50%; //cercle
+        font-size: 30px;
+}
+
+.btn-medical {
+    margin-right: 10px;
+        margin-bottom: 10px;
+        width: 50px; //longeur
+        height: 50px; //hauteur
+        border-radius: 50%; //cercle
+        font-size: 30px;
+        border: 2px solid black;
+}
+
+.btn-delete {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 50px; //longeur
+        height: 50px; //hauteur
+        border-radius: 50%; //cercle
+        font-size: 30px;
+    }
+
+.icon-delete:hover {
+    opacity: 0.5;
+}
+

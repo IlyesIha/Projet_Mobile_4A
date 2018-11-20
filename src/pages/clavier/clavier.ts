@@ -24,7 +24,10 @@ export class ClavierPage {
     }
   }
 
-  
-
+  Delete(){
+    if(this.numero != null && this.numero.length > 0){
+      this.numero = this.numero.substring(0, this.numero.length - 1);
+    }   
+  }
 
 }
