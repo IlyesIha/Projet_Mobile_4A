@@ -23,7 +23,7 @@
       <button class="btn" (click)="Keyboard('0')">0</button>
       <button class="btn" (click)="Keyboard('#')">#</button><br>
       <button class="btn-ghost" disabled></button>
-      <button class="btn-call"><ion-icon class="icon-phone" name="ios-call"></ion-icon></button>
+      <button class="btn-call"(click)="Call()"><ion-icon class="icon-phone" name="ios-call"></ion-icon></button>
       <button class="btn-delete"(click)="Delete()"><ion-icon class="icon-delete" name="ios-backspace-outline"></ion-icon></button>
     </div>
     <ion-item style="text-align: center;">

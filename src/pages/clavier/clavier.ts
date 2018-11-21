@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-clavier',
@@ -9,7 +11,7 @@ export class ClavierPage {
 
   numero = "";
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,private alertCtrl: AlertController) {
   }
 
   ionViewDidLeave(){
@@ -29,5 +31,24 @@ export class ClavierPage {
       this.numero = this.numero.substring(0, this.numero.length - 1);
     }   
   }
+
+  Call(){
+    if(this.numero.length>=10){
+      let alert = this.alertCtrl.create({
+        title: 'Appel en cours',
+        subTitle: this.numero,
+        buttons: ['OK']
+      });
+      alert.present();
+    }else{
+      let alert = this.alertCtrl.create({
+        title: 'numero inexistant',
+        subTitle: this.numero,
+        buttons: ['OK']
+      });
+      alert.present();
+    }
+  }
+  
 
 }
