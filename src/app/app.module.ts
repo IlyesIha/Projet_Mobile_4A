@@ -8,7 +8,7 @@ import { ClavierPage } from '../pages/clavier/clavier';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { AddPageContactPage } from '../pages/add-page-contact/add-page-contact';
+import { AddContactPage } from '../pages/add-contact/add-contact';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +22,7 @@ import { Keyboard } from '@ionic-native/keyboard';
     ContactPage,
     HomePage,
     TabsPage,
-    AddPageContactPage
+    AddContactPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +35,7 @@ import { Keyboard } from '@ionic-native/keyboard';
     ContactPage,
     HomePage,
     TabsPage,
-    AddPageContactPage
+    AddContactPage
   ],
   providers: [
     StatusBar,
