@@ -15,6 +15,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyDRBYhhGatKZeB9cF-LpfhCqSsQk8S6koo",
+    authDomain: "progmobile4a.firebaseapp.com",
+    databaseURL: "https://progmobile4a.firebaseio.com",
+    projectId: "progmobile4a",
+    storageBucket: "progmobile4a.appspot.com",
+    messagingSenderId: "242618572209"
+ };
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +38,9 @@ import { Keyboard } from '@ionic-native/keyboard';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,7 +55,9 @@ import { Keyboard } from '@ionic-native/keyboard';
     StatusBar,
     SplashScreen,
     Keyboard,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}

@@ -48,7 +48,12 @@
       <ion-item>
         <ion-label>Anniversaire</ion-label>
         <ion-input [(ngModel)]="item.Anniversaire" text></ion-input>
+        <ion-datetime [(ngModel)]="item.year" displayFormat="DD/MM/YYYY"></ion-datetime>
+
     
       </ion-item>
+
+      <button ion-button (click)="addItem(item)">Ajouter le Contact</button>
+
 
 </ion-content>
