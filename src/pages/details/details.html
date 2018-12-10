@@ -13,8 +13,8 @@
     <ion-label><b>Anniversaire :</b> {{item.Anniversaire}}</ion-label>
     <ion-label><b>Adresse :</b> {{item.Adresse}}</ion-label></p>
 
-    <button ion-button (click)="suppItem(item)">Ajouter le Contact</button>
-
+    <button ion-button (click)="suppItem(item.key)">Supprimer le contact</button>
+    <button ion-button (click)="addField()" class="modifcontact">modifier le contact</button>
 
 </ion-content>
 
