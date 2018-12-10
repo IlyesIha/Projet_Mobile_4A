@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{item.Prenom}}&nbsp;<b>{{item.Nom}}</b></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <br><br><p class="affichage">
+    <ion-label><b>Numéro :</b> {{item.Numero}}</ion-label>
+    <ion-label><b>Email :</b> {{item.Email}}</ion-label>
+    <ion-label><b>Anniversaire :</b> {{item.Anniversaire}}</ion-label>
+    <ion-label><b>Adresse :</b> {{item.Adresse}}</ion-label></p>
+
+    <button ion-button (click)="suppItem(item)">Ajouter le Contact</button>
+
+
+</ion-content>
+

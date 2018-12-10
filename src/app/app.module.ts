@@ -6,7 +6,7 @@ import { MyApp } from './app.component';
 
 import { ClavierPage } from '../pages/clavier/clavier';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { DetailsPage} from "../pages/details/details"
 import { TabsPage } from '../pages/tabs/tabs';
 import { AddContactPage } from '../pages/add-contact/add-contact';
 
@@ -32,8 +32,8 @@ export const firebaseConfig = {
     MyApp,
     ClavierPage,
     ContactPage,
-    HomePage,
     TabsPage,
+    DetailsPage,
     AddContactPage
   ],
   imports: [
@@ -47,8 +47,8 @@ export const firebaseConfig = {
     MyApp,
     ClavierPage,
     ContactPage,
-    HomePage,
     TabsPage,
+    DetailsPage,
     AddContactPage
   ],
   providers: [
