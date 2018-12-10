@@ -38,7 +38,7 @@ export class AddContactPage {
 
     item.key = this.generatePushID();
     //setting custom key
-    const toSend = this.afDB.object(`${item.key}`);
+    const toSend = this.afDB.object(`/contact-list/${item.key}`);
     //set item into firebase
     toSend.set(item);
     //go back to home page

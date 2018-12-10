@@ -16,36 +16,36 @@
 <ion-content padding>
 
     
-    <ion-item>
+    <br><ion-item>
         <ion-label>Prénom</ion-label>
         <ion-input [(ngModel)]="item.Prenom" text></ion-input>
       </ion-item>
     
-      <ion-item>
+      <br><ion-item>
         <ion-label>Nom</ion-label>
         <ion-input [(ngModel)]="item.Nom" text></ion-input>
     
       </ion-item>
     
-      <ion-item>
+      <br><ion-item>
         <ion-label>Numéro</ion-label>
         <ion-input [(ngModel)]="item.Numero" text></ion-input>
     
       </ion-item>
     
-      <ion-item>
+      <br><ion-item>
         <ion-label>Email</ion-label>
         <ion-input [(ngModel)]="item.Email" text></ion-input>
     
       </ion-item>
     
-      <ion-item>
+      <br><ion-item>
         <ion-label>Adresse</ion-label>
         <ion-input [(ngModel)]="item.Adresse" text></ion-input>
     
       </ion-item>
     
-      <ion-item>
+      <br><ion-item>
         <ion-label>Anniversaire</ion-label>
         <ion-input [(ngModel)]="item.Anniversaire" text></ion-input>
         <ion-datetime [(ngModel)]="item.year" displayFormat="DD/MM/YYYY"></ion-datetime>
@@ -53,7 +53,7 @@
     
       </ion-item>
 
-      <button ion-button (click)="addItem(item)">Ajouter le Contact</button>
+      <button ion-button (click)="addItem(item)"class="button">Ajouter le Contact</button>
 
 
 </ion-content>
